@@ -1,6 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
 :root{
     --card-bg: rgba(0, 0, 0, 0.616);
+    --main-bg-color: #333333;
+    --strong-text: #E21B5A;
+    --secondary-text: #9E0C39;
+    --light-text: #FBFFE3;
+    --green-text: #83A300;
 }
 *{
     margin: 0;
@@ -28,7 +33,7 @@
 .container .section .content{
     position: absolute;
     left: 1rem;
-    bottom: 2em;
+    bottom: 2.5em;
     right: 50px;
     max-width: 700px;
 }
@@ -51,7 +56,8 @@
 }
 
 .container .section:nth-child(1){
-    background-image:url("./img/lentes.jpeg"); 
+    background-color: violet;
+    background-image:url("./img/pawi1.jpeg"); 
     background-position:center; 
     background-attachment: fixed; 
     -o-background-size:cover; 
@@ -62,7 +68,8 @@
 }
 
 .container .section:nth-child(2){
-    background-image:url("./img/novia.jpeg"); 
+    background-color: greenyellow;
+    background-image:url("./img/comiendo.jpeg"); 
     background-position:center; 
     background-attachment: fixed; 
     -o-background-size:cover; 
@@ -73,7 +80,7 @@
 }
 
 .container .section:nth-child(3){
-    background: rgb(100, 162, 255) url(./img/latita.jpeg);
+    background: rgb(255, 0, 149) url(./img/tacos.jpeg);
     background-size: cover;
     background-attachment: fixed;
 }
@@ -85,8 +92,81 @@
 }
 
 .container .section:nth-child(5){
-    background: rgb(255, 0, 221) url(./img/kiss1.jpeg);
+    background: rgb(255, 0, 221) url(./img/latita.jpeg);
     background-size: cover;
     background-attachment: fixed;
 }
 
+.container .section:nth-child(6){
+    background: rgb(187, 255, 0) url(./img/ayo.jpeg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.container .section:nth-child(7){
+    background: rgb(187, 255, 0) url(./img/kiss2.jpeg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+
+
+
+a{
+    text-decoration: none;
+}
+.button{
+    font-size: 2rem;
+    font-weight: 500;
+    padding: 0.5rem 1rem;
+    color: white;
+    background-color: var(--secondary-text);
+    border: none;
+    border-radius: 0.62rem;
+    margin: 0 1rem;
+    
+}
+
+#si{
+    padding: 0.5rem 2rem;
+}
+
+#no{
+    background-color: var(--main-bg-color);
+    color: var(--light-text);
+    font-size: 0.7rem;
+}
+
+.response-btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0;
+}
+
+.button:hover{
+    cursor: pointer;
+}
+
+.flex-content{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    
+}
+
+.btns-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#final-title{
+    font-size: 3rem;
+}
+
+#question{
+    font-size: 3.2rem;
+    text-align: center;
+}
