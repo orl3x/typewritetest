@@ -27,19 +27,19 @@ body{
 }
 .wrapper .static-txt{
   color: var(--light-text);
-  font-size: 60px;
+  font-size: 3.75rem;
   font-weight: 400;
 }
 .wrapper .dynamic-txts{
-  margin-left: 15px;
-  height: 90px;
-  line-height: 90px;
+  margin-left: 0.93rem;
+  height: 5.62rem;
+  line-height: 5.62rem;
   overflow: hidden;
 }
 .dynamic-txts li{
   list-style: none;
   color: var(--strong-text);
-  font-size: 60px;
+  font-size: 3.75rem;
   font-weight: 500;
   position: relative;
   top: 0;
@@ -52,8 +52,8 @@ body{
 }
 .dynamic-txts li span{
   position: relative;
-  margin: 5px 0;
-  line-height: 90px;
+  margin: 0.3rem 0;
+  line-height: 5.62rem;
 }
 .dynamic-txts li span::after{
   content: "";
@@ -62,7 +62,7 @@ body{
   height: 100%;
   width: 100%;
   background: var(--main-bg-color);
-  border-left: 2px solid var(--secondary-text);
+  border-left: 0.12rem solid var(--secondary-text);
   animation: typing 3s steps(10) infinite;
 }
 @keyframes typing {
@@ -97,7 +97,7 @@ a{
     color: white;
     background-color: var(--secondary-text);
     border: none;
-    border-radius: 10px;
+    border-radius: 0.62rem;
     
 }
 
