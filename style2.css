@@ -1,9 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
-
+:root{
+    --card-bg: rgba(0, 0, 0, 0.616);
+}
 *{
     margin: 0;
     padding: 0;
     font-family: 'Poppins', sans-serif;
+    color: whitesmoke;
 }
 
 .container{
@@ -24,34 +27,49 @@
 
 .container .section .content{
     position: absolute;
-    bottom: 50px;
-    left: 50px;
+    bottom: 5rem;
+    left: 5rem;
     right: 50px;
     max-width: 700px;
 }
 
 .container .section .content h2{
-    background: whitesmoke;
+    background: var(--card-bg);
     display: inline-block;
+    border-radius: 0.5rem;
+    padding: 0.5rem 1rem;
+    font-size: 1.5rem;
 }
 
 .container .section .content p{
-    background: whitesmoke;
+    border-radius: 0.5rem;
+    padding: 0.5rem 1rem;
+    background: var(--card-bg);
     display: inline-block;
     margin-top: 1rem;
+    font-size: 1.3rem;
 }
 
 .container .section:nth-child(1){
-    background: rgb(255, 238, 0) url(./img/perrito.jpg);
-    background-size: cover;
-    background-attachment: fixed;
+    background-image:url("./img/lentes.jpeg"); 
+    background-position:center; 
+    background-attachment: fixed; 
+    -o-background-size:cover; 
+    -moz-background-size:cover; 
+    -webkit-background-size:cover; 
+    background-size:cover; 
+    background-repeat:no-repeat;
 }
 
 .container .section:nth-child(2){
-    background: rgb(20, 255, 79) url(./img/gaspachos.jpg);
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
+    background-image:url("./img/novia.jpeg"); 
+    background-position:center; 
+    background-attachment: fixed; 
+    -o-background-size:cover; 
+    -moz-background-size:cover; 
+    -webkit-background-size:cover; 
+    background-size:cover; 
+    background-repeat:no-repeat;
 }
 
 .container .section:nth-child(3){
