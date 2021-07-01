@@ -1,4 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+:root{
+    --main-bg-color: #333333;
+    --strong-text: #E21B5A;
+    --secondary-text: #9E0C39;
+    --light-text: #FBFFE3;
+    --green-text: #83A300;
+}
 *{
   margin: 0;
   padding: 0;
@@ -11,14 +19,14 @@ body{
   align-items: center;
   justify-content: center;
   min-height: 100vh;
-  background: #343F4F;
+  background: var(--main-bg-color);
 }
 .wrapper{
   display: flex;
   margin-bottom: 7rem;
 }
 .wrapper .static-txt{
-  color: #fff;
+  color: var(--light-text);
   font-size: 60px;
   font-weight: 400;
 }
@@ -30,7 +38,7 @@ body{
 }
 .dynamic-txts li{
   list-style: none;
-  color: #FC6D6D;
+  color: var(--strong-text);
   font-size: 60px;
   font-weight: 500;
   position: relative;
@@ -53,8 +61,8 @@ body{
   left: 0;
   height: 100%;
   width: 100%;
-  background: #343F4F;
-  border-left: 2px solid #FC6D6D;
+  background: var(--main-bg-color);
+  border-left: 2px solid var(--secondary-text);
   animation: typing 3s steps(10) infinite;
 }
 @keyframes typing {
@@ -68,7 +76,8 @@ body{
 
 .main-title{
     font-size: 4rem;
-    color: white;
+    color: var(--light-text);
+    text-align: center;
 }
 
 .mirror{
@@ -83,10 +92,10 @@ a{
     text-decoration: none;
 }
 .button{
-    font-size: 1.5rem;
-    padding: 0.5rem 1rem;
+    font-size: 3rem;
+    padding: 0.8rem 1.5rem;
     color: white;
-    background-color: tomato;
+    background-color: var(--secondary-text);
     border: none;
     border-radius: 10px;
     
